@@ -1,6 +1,9 @@
 # Microsoft.EntityFrameworkCore
 Sequence of commands in general
 
+## 0 - Fiw connection String in appsettings.json
+"Server=localhost;Database=DatabaseName;Trusted_Connection=True;Encrypt=true;TrustServerCertificate=true;"
+
 ## 1 - Create a migration after creating the models
 Add-Migration "Migration Name"
 
