@@ -16,3 +16,18 @@ Scaffold-DbContext "Server=.\SQLExpress;Database=SchoolDB;Trusted_Connection=Tru
 ## 4 - If necessary - Replace existing Db_Context with new scaffolded DbContext in Progeam.cs
 
 ## 5 - Fix DbContext in Program.cs
+
+
+# Add Authentication
+
+## Create User model (empty of any properties) - Must herite from  IdentityUser<int>
+  Model file:
+  public class User : IdentityUser<int>
+  {
+  }
+  
+  ## Command: Add-Migration "User Model"
+  
+  ## Command: Update-Database
+
+## Craete Folder "Account" and add three pages for login, register, logout
